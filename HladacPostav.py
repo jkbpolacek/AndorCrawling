@@ -1,6 +1,5 @@
 import requests, bs4, re
 from time import time
-from itertools import permutations
 
 """poslední login: poslední login: 16. prosince 2015 23:17"""
 
@@ -9,7 +8,6 @@ logIn = '13.*ledna.*2018.*17:12'
 
 found = False
 patternTime = re.compile(logIn)
-pattern = re.compile('\d\d\..+?\d\d\d\d.*?\d*:\d\d')
 for x in range(0,280,20):
 	
 	a = time()
